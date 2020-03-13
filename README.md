@@ -7,11 +7,11 @@
 
 Screenshot
 --------
-<img src="https://raw.githubusercontent.com/yuanbinbinbin/IPinyinTextView/master/ext/img/screenshot.jpg" alt="screenshot.jpg" />
+<img src="https://github.com/yuanbinbinbin/IPinyinTextView/blob/master/ext/img/screenshot.jpg?raw=true" alt="screenshot.jpg" />
 
 Test
 --------
-1. download [release_1.0.0.apk](https://github.com/yuanbinbinbin/IPinyinTextView/blob/master/ext/release_1.0.0.apk)
+1. download [release_1.0.0.apk](https://github.com/yuanbinbinbin/IPinyinTextView/raw/master/ext/release_1.0.0.apk)
 2. install it
 
 Usage
