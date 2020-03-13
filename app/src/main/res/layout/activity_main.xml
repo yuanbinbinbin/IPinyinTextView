@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="fillWord"
+            android:text="填充" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="showHanziPinyin"
+            android:text="汉字拼音" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="showHanzi"
+            android:text="汉字" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="showPinyin"
+            android:text="拼音" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziAdd"
+            android:text="汉字+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziSub"
+            android:text="汉字-5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="pinyinAdd"
+            android:text="拼音+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="pinyinSub"
+            android:text="拼音-5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziHAdd"
+            android:text="字横距+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziHSub"
+            android:text="字距-5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziVAdd"
+            android:text="字竖距+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hanziVSub"
+            android:text="字竖距-5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="HanZiPinyinAdd"
+            android:text="拼音文字竖距+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="HanZiPinyinSub"
+            android:text="拼音文字竖距-5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="showUnderLine"
+            android:text="显示下划线" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="hideUnderLine"
+            android:text="隐藏" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineSpaceAdd"
+            android:text="线距+5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineSpaceSub"
+            android:text="线距-5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineColor"
+            android:text="颜色" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineWidthAdd"
+            android:text="宽+2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineWidthSub"
+            android:text="宽-2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineSolid"
+            android:text="实线" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="underLineDotted"
+            android:text="虚线" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="specialTextColor"
+            android:text="特定文字颜色"
+            android:textColor="#FF00FF00" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="specialPinyinColor"
+            android:text="特定拼音颜色"
+            android:textColor="#FFFFFF00" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="normalTextColor"
+            android:text="普通汉字颜色"
+            android:textColor="#FFFF0000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="normalPinyinColor"
+            android:text="普通拼音颜色"
+            android:textColor="#FFFF00FF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="allTextColor"
+            android:text="汉字All"
+            android:textColor="#abce80" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="allPinyinColor"
+            android:text="拼音All"
+            android:textColor="#c9b2a2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="textIndentAdd"
+            android:text="首行缩进+1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_sent_comment"
+            android:gravity="center"
+            android:onClick="textIndentSub"
+            android:text="首行缩进-1" />
+
+    </LinearLayout>
+
+    <com.yb.lib.pinyin.PinYinTextView
+        android:id="@+id/pinyin_tv"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_sent_comment"
+        android:padding="10dp" />
+</RelativeLayout>

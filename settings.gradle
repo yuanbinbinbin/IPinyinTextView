@@ -1,0 +1,3 @@
+rootProject.name='PinyinDemo'
+include ':app'
+include ':pinyinlib'
