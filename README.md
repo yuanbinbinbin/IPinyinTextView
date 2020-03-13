@@ -7,7 +7,7 @@
 
 Screenshot
 --------
-<img src="https://github.com/yuanbinbinbin/IPinyinTextView/blob/master/ext/img/screenshot.jpg?raw=true" width="600" alt="screenshot.jpg" />
+<img src="https://github.com/yuanbinbinbin/IPinyinTextView/blob/master/ext/img/screenshot.jpg?raw=true" alt="screenshot.jpg" />
 
 Test
 --------
