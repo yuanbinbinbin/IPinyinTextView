@@ -19,9 +19,28 @@ android {
         }
     }
 
+    signingConfigs {
+        config {
+            storeFile file('release.jks')
+            storePassword "123456"
+            keyAlias "yb"
+            keyPassword "123456"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':pinyinlib')
+//    implementation 'com.github.binbinrd:PinyinTextView:1.0.0'
+
 }
